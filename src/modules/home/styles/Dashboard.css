@@ -1,0 +1,141 @@
+.dashboard-container {
+    /* margin-top: 5px; */
+    background-color: var(--color-bg-grey);
+}
+
+.dashboard-menu {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-menu,
+.right-menu {
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: var(--transition-sec);
+}
+
+.left-menu {
+    height: calc(100vh - 50px);
+    /* background-color: aliceblue; */
+}
+
+.right-menu {
+    height: calc(100vh - 50px);
+    /* background-color: antiquewhite; */
+}
+
+.outlet-holder {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.outlet-view {
+    width: 600px;
+    height: 1000px;
+    /* background-color: azure; */
+    transition: var(--transition-sec);
+    padding: 10px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.timeline-feeds{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+    .left-menu,
+    .right-menu {
+        width: 300px;
+    }
+
+    .outlet-view {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .left-menu {
+        width: 400px;
+    }
+
+    .right-menu {
+        display: none;
+    }
+
+    .outlet-holder {
+        justify-content: flex-end;
+    }
+
+    .outlet-view {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .left-menu {
+        width: 300px;
+    }
+
+    .outlet-view {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .left-menu {
+        display: none;
+    }
+
+    .outlet-holder {
+        justify-content: center;
+    }
+
+    .outlet-view {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .outlet-view {
+        /* margin-top: 35px; */
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .outlet-view {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .outlet-view {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .outlet-view {
+        width: 310px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .outlet-view {
+        /* margin-top: 25px; */
+        margin-top: 40px;
+    }
+}

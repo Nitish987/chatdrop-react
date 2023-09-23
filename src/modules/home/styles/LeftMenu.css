@@ -1,0 +1,9 @@
+.left-menu-container{
+    display: flex;
+    flex-direction: column;    
+    background-color: var(--color-bg);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    gap: 5px;
+}

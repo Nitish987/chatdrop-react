@@ -1,0 +1,50 @@
+.reel-block {
+    position: relative;
+    background-color: var(--color-bg);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.reel-horizontal {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: clip;
+    scroll-behavior: smooth;
+}
+
+.reel-scroll-prev-btn,
+.reel-scroll-next-btn {
+    height: calc(100% - 30px);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reel-scroll-prev-btn {
+    left: -10px;
+}
+
+.reel-scroll-next-btn {
+    right: -10px;
+}
+
+@media screen and (max-width: 600px) {
+    .reel-horizontal {
+        overflow-x: scroll;
+    }
+
+    .reel-scroll-next-btn,
+    .reel-scroll-prev-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .reel-horizontal {
+        padding: 5px;
+        gap: 5px;
+    }
+}

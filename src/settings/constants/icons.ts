@@ -1,0 +1,79 @@
+import search from '../../assets/icons/search.svg';
+import home from '../../assets/icons/home.svg';
+import chats from '../../assets/icons/chats.svg';
+import add from '../../assets/icons/add.svg';
+import favourite from '../../assets/icons/favorite.svg';
+import favouriteFill from '../../assets/icons/favorite_fill.svg';
+import profile from '../../assets/icons/profile.svg';
+import close from '../../assets/icons/close.svg';
+import addPhoto from '../../assets/icons/add_photo.svg';
+import addVideo from '../../assets/icons/add_video.svg';
+import addlink from '../../assets/icons/add_link.svg';
+import addCircle from '../../assets/icons/add_circle.svg';
+import addCircleFill from '../../assets/icons/add_circle_fill.svg';
+import editFill from '../../assets/icons/edit_fill.svg';
+import moreHorizontal from '../../assets/icons/more_horizontal.svg';
+import moreVertical from '../../assets/icons/more_vertical.svg';
+import camera from '../../assets/icons/camera.svg';
+import profileCover from '../../assets/icons/profile_cover.svg';
+import friends from '../../assets/icons/friends.svg'
+import reels from '../../assets/icons/reels.svg'
+import stories from '../../assets/icons/stories.svg'
+import like from '../../assets/icons/like.svg'
+import comment from '../../assets/icons/comment.svg'
+import send from '../../assets/icons/send.svg'
+import public_ from '../../assets/icons/public.svg'
+import private_ from '../../assets/icons/private.svg'
+import arrowBack from '../../assets/icons/arrow_back.svg'
+import arrowForward from '../../assets/icons/arrow_forward.svg'
+import arrowUp from '../../assets/icons/arrow_up.svg'
+import arrowDown from '../../assets/icons/arrow_down.svg'
+import volumeUp from '../../assets/icons/volume_up.svg'
+import volumeOff from '../../assets/icons/volume_off.svg'
+import play from '../../assets/icons/play.svg'
+import pause from '../../assets/icons/pause.svg'
+import addFriend from '../../assets/icons/add_friend.svg'
+import removeFriend from '../../assets/icons/remove_friend.svg'
+import notification from '../../assets/icons/notification.svg'
+import check from '../../assets/icons/check.svg'
+
+export default class Icons {
+    static search = search;
+    static home = home;
+    static chats = chats;
+    static add = add;
+    static favourite = favourite;
+    static favouriteFill = favouriteFill;
+    static profile = profile;
+    static close = close;
+    static addPhoto = addPhoto;
+    static addVideo = addVideo;
+    static addlink = addlink;
+    static addCircle = addCircle;
+    static addCircleFill = addCircleFill;
+    static editFill = editFill;
+    static moreHorizontal = moreHorizontal;
+    static moreVertical = moreVertical;
+    static camera = camera;
+    static profileCover = profileCover;
+    static friends = friends;
+    static reels = reels;
+    static stories = stories;
+    static like = like;
+    static comment = comment;
+    static send = send;
+    static public = public_;
+    static private = private_;
+    static arrowBack = arrowBack;
+    static arrowForward = arrowForward;
+    static arrowUp = arrowUp;
+    static arrowDown = arrowDown;
+    static volumeUp = volumeUp;
+    static volumeOff = volumeOff;
+    static play = play;
+    static pause = pause;
+    static addFriend = addFriend;
+    static removeFriend = removeFriend;
+    static notification = notification;
+    static check = check;
+}

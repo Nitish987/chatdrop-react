@@ -1,0 +1,47 @@
+.reel-placeholder,
+.reel-thumbnail {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    transition: var(--transition-sec);
+}
+
+.reel-placeholder {
+    position: relative;
+    overflow: hidden;
+}
+
+.reel-thumbnail {
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.reel-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.reel-name-views {
+    position: absolute;
+    bottom: 0px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .reel-placeholder,
+    .reel-thumbnail {
+        width: 150px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .reel-placeholder,
+    .reel-thumbnail {
+        width: 100px;
+        height: 150px;
+    }
+}

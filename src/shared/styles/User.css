@@ -1,0 +1,36 @@
+.user {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--color-bg);
+}
+
+.user:hover {
+    background-color: var(--color-bg-grey);
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.name-message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user-name {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.user-message {
+    font-size: 12px;
+    color: var(--color-text-common);
+}

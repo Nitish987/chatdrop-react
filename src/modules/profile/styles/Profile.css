@@ -1,0 +1,396 @@
+.profile-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-data-block {
+    border-radius: 10px;
+    background-color: var(--color-bg);
+    box-shadow: var(--box-shadow);
+}
+
+.profile-pic-container {
+    height: 320px;
+    transition: var(--transition-sec);
+}
+
+.profile-cover-holder,
+.profile-cover {
+    background-color: var(--color-bg);
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: var(--transition-sec);
+}
+
+.profile-cover-holder {
+    position: relative;
+}
+
+.profile-cover {
+    object-fit: cover;
+}
+
+.profile-photo-holder {
+    position: relative;
+    top: -110px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    background-color: var(--color-bg);
+    border: 10px solid var(--color-bg);
+    border-radius: 100%;
+    transition: var(--transition-sec);
+}
+
+.profile-dropdown-menu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 5px;
+}
+
+.profile-dropdown-menu-options {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: var(--color-bg);
+    padding: 5px;
+    border-radius: 10px;
+    border: var(--border);
+    z-index: 1;
+    animation: fade-in linear 0.2s;
+}
+
+.profile-dropdown-menu:hover .profile-dropdown-menu-options {
+    display: flex;
+}
+
+.profile-pics-edit-btns {
+    position: absolute;
+    bottom: 55px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    transition: var(--transition-sec);
+}
+
+.profile-pic-edit-btns-mobile {
+    display: none;
+}
+
+.profile-content-holder {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.profile-name,
+.profile-message {
+    transition: var(--transition-sec);
+}
+
+.profile-fanfollowing {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    transition: var(--transition-sec);
+}
+
+.profile-followers,
+.profile-followings {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    transition: var(--transition-sec);
+}
+
+.profile-tabs {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.profile-tab-selected {
+    border-color: var(--color-border);
+}
+
+.profile-tabs-output {
+    width: 100%;
+    min-height: 300px;
+    margin-top: 30px;
+}
+
+.profile-about p {
+    text-justify: auto;
+}
+
+.interest-chip-container {
+    margin-block: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.interest-chip {
+    padding: 5px 10px;
+    background-color: var(--color-primary);
+    color: var(--color-text-alt);
+    border-radius: 5px;
+}
+
+.profile-posts-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-post-list {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: var(--transition-sec);
+}
+
+.profile-photo-list {
+    display: grid;
+    grid-template-columns: repeat(5, calc((100% / 5) - 8.4px));
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    transition: var(--transition-sec);
+}
+
+.profile-photo-list div {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.profile-photo-list img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: var(--transition-sec);
+}
+
+.profile-photo-list img:hover {
+    transform: scale(1.05);
+}
+
+.edit-profile-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-profile-block div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+    .profile-pic-container {
+        height: 280px;
+    }
+
+    .profile-cover-holder,
+    .profile-cover {
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .profile-pic-container {
+        height: 250px;
+    }
+
+    .profile-cover-holder,
+    .profile-cover {
+        height: 150px;
+    }
+
+    .profile-photo-holder {
+        top: -95px;
+    }
+
+    .profile-photo {
+        width: 170px;
+        height: 170px;
+    }
+
+    .profile-pics-edit-btns {
+        top: 115px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .profile-pics-edit-btns {
+        display: none;
+    }
+
+    .profile-pic-edit-btns-mobile {
+        display: flex;
+    }
+
+    .profile-post-list {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .profile-pic-container {
+        height: 240px;
+    }
+
+    .profile-photo-holder {
+        top: -85px;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-pics-edit-btns {
+        top: 105px;
+    }
+
+    .profile-post-list {
+        width: 460px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .profile-fanfollowing {
+        gap: 7px;
+    }
+
+    .profile-post-list {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .profile-photo-holder {
+        top: -95px;
+    }
+
+    .profile-photo {
+        width: 170px;
+        height: 170px;
+    }
+
+    .profile-pics-edit-btns {
+        top: 115px;
+    }
+
+    .profile-post-list {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .profile-photo-list {
+        grid-template-columns: repeat(4, calc((100% / 4) - 8px));
+    }
+
+    .profile-post-list {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .profile-pic-container {
+        height: 210px;
+    }
+
+    .profile-cover-holder,
+    .profile-cover {
+        height: 130px;
+    }
+
+    .profile-photo-holder {
+        top: -75px;
+    }
+
+    .profile-photo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .profile-fanfollowing,
+    .profile-buttons {
+        gap: 5px;
+    }
+
+    .profile-name {
+        font-size: 25px;
+    }
+
+    .profile-message {
+        font-size: 12px;
+    }
+
+    .profile-pics-edit-btns {
+        top: 82px;
+        right: 5px;
+        gap: 5px;
+    }
+
+    .profile-pics-edit-btns button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile-photo-list {
+        grid-template-columns: repeat(3, calc((100% / 3) - 7px));
+    }
+
+    .profile-post-list {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .profile-fanfollowing {
+        gap: 0px;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .profile-tabs {
+        gap: 17px;
+    }
+}

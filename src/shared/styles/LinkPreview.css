@@ -1,0 +1,22 @@
+.link-preview {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: var(--border);
+}
+
+.link-preview-image {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.link-preview-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 10px;
+}

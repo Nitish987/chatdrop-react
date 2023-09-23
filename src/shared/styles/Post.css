@@ -1,0 +1,240 @@
+.post {
+    background-color: var(--color-bg);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+}
+
+/* ------------------------------ */
+/* HEADER */
+.post-header {
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    align-items: center;
+}
+
+.post-profile-pic {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.post-header-middle {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.post-icon-visiblity {
+    width: 12px;
+}
+
+.post-time-visibility {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.post-profile-name {
+    font-weight: bold;
+}
+
+.post-time {
+    font-size: 12px;
+}
+
+.post-options {
+    position: relative;
+}
+
+.post-options-dropdown {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: var(--color-bg);
+    border: var(--border);
+    padding: 5px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1;
+    animation: fade-in linear 0.2s;
+}
+
+.post-options:hover .post-options-dropdown {
+    display: flex;
+}
+
+/* ------------------------------ */
+/* post body */
+.post-text,
+.post-link-preview {
+    padding: 10px;
+}
+
+.post-photo img{
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+
+.post-photo-multiple {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.post-photo-multiple-img {
+    height: 400px;
+    position: absolute;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    object-fit: cover;
+    animation: fade-in linear 0.2s;
+}
+
+.post-photo-multi-switch-btns {
+    position: absolute;
+    z-index: 1;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 10px);
+    align-items: center;
+    height: 390px;
+}
+
+.post-photo-multi-counter {
+    position: absolute;
+    right: 0px;
+    padding: 5px;
+    margin: 5px;
+    background-color: var(--color-bg);
+    border: var(--border);
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.post-video {
+    position: relative;
+}
+
+.post-video video{
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+
+.post-video-player-btns {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ------------------------------ */
+/* footer */
+
+.post-footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.post-footer-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.post-like-btn-container {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.post-like-emoji {
+    display: none;
+    gap: 5px;
+    position: absolute;
+    top: -8px;
+    left: 0px;
+    background-color: var(--color-bg);
+    padding: 5px;
+    border-radius: 10px;
+    border: var(--border);
+    z-index: 1;
+    animation: fade-in linear 0.2s;
+}
+
+.post-like-btn-container:hover .post-like-emoji {
+    display: flex;
+}
+
+.post-footer-middle {
+    flex-grow: 1;
+}
+
+.post-comment-add {
+    background-color: var(--color-bg-grey);
+    padding: 10px;
+    flex-grow: 1;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.post-comment {
+    display: flex;
+    gap: 15px;
+}
+
+.post-like-comment-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.post-like-comment-info span {
+    font-size: 14px;
+}
+
+.post-like-comment-info span:nth-child(2) {
+    cursor: pointer;
+}
+
+/* post comment */
+.post-comment-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-comment-list {
+    height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: auto;
+}
+
+.post-comment-input {
+    display: flex;
+    padding-top: 10px;
+    gap: 15px;
+}
+
+.post-comment-input-pic {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.post-comment-input input {
+    flex-grow: 1;
+}

@@ -1,0 +1,93 @@
+.alert {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 8px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 1px 10px grey;
+    z-index: 25;
+}
+
+.alert span {
+    flex-grow: 1;
+    color: wheat;
+    margin-left: 20px;
+}
+
+.alert button {
+    margin-right: 10px;
+}
+
+.success {
+    background-color: #d1e7dd;
+}
+
+.success span {
+    color: #0f5132;
+}
+
+.success button {
+    background-color: #d1e7dd;
+    border-color: #0f5132;
+}
+
+.success button:hover {
+    background-color: #b1e2cc;
+    border-color: #0f5132;
+}
+
+.info {
+    background-color: #cfe2ff;
+}
+
+.info span {
+    color: #084298;
+}
+
+.info button {
+    background-color: #cfe2ff;
+    border-color: #084298;
+}
+
+.info button:hover {
+    background-color: #b0cffe;
+    border-color: #084298;
+}
+
+.warning {
+    background-color: #fff3cd;
+}
+
+.warning span {
+    color: #664d03;
+}
+
+.warning button {
+    background-color: #fff3cd;
+    border-color: #664d03;
+}
+
+.warning button:hover {
+    background-color: #ffecac;
+    border-color: #664d03;
+}
+
+.danger {
+    background-color: #f8d7da;
+}
+
+.danger span {
+    color: #842029;
+}
+
+.danger button {
+    background-color: #f8d7da;
+    border-color: #842029;
+}
+
+.danger button:hover {
+    background-color: #f7b2b8;
+    border-color: #842029;
+}

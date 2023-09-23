@@ -1,0 +1,196 @@
+.nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: var(--color-bg);
+    z-index: var(--nav-z-index);
+    box-shadow: 0px 0px 7px gray;
+}
+
+.navbar {
+    padding: 5px 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    transition: var(--transition-sec);
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 40px;
+    height: 40px;
+    transition: var(--transition-sec);
+}
+
+.navbar-logo span {
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 17px;
+    transition: var(--transition-sec);
+}
+
+.navbar-tabs {
+    padding-inline: 50px;
+    flex-grow: 1;
+    transition: var(--transition-sec);
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    transition: var(--transition-sec);
+}
+
+.tabs-second {
+    display: none;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchbar {
+    width: 360px;
+    transition: var(--transition-sec);
+}
+
+.profilebar-btn img {
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.navbar-subtabs {
+    /* padding: 0px 5px 5px 5px; */
+    padding: 0px 10px 5px 10px;
+    display: none;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: var(--border);
+    overflow-x: auto;
+}
+
+.navbar-subtabs::-webkit-scrollbar {
+    display: none;
+}
+
+/* .nav-subtab {
+    height: 30px;
+} */
+
+.nav-profile-dropdown {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 2px;
+    border-radius: 10px;
+    background-color: var(--color-bg);
+    box-shadow: 0px 0px 10px var(--color-border);
+    z-index: 11;
+    animation: fade-in linear 0.2s;
+}
+
+@media screen and (max-width: 1250px) {
+    .navbar-tabs {
+        padding-inline: 20px;
+    }
+    
+    .nav-tabs {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .searchbar {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .tabs-first {
+        display: none;
+    }
+
+    .tabs-second {
+        display: flex;
+    }
+
+    .searchbar {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .navbar-logo span {
+        display: none;
+    }
+
+    .searchbar {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .searchbar {
+        width: 175px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-tabs {
+        padding-inline: 0px;
+    }
+
+    .tabs-second {
+        display: none;
+    }
+
+    .navbar-subtabs {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* .navbar {
+        padding: 5px;
+        height: 30px;
+    }
+
+    .navbar-logo img {
+        width: 30px;
+        height: 30px;
+    } */
+
+    .searchbar {
+        /* width: 190px; */
+        width: 120px;
+        /* height: 10px; */
+    }
+
+    /* .searchbar-btn, .profilebar-btn {
+        width: 30px;
+        height: 30px;
+    } */
+
+    .navbar-subtabs {
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .searchbar {
+        /* width: 150px; */
+        width: 120px;
+        /* height: 10px; */
+    }
+}

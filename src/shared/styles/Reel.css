@@ -1,0 +1,157 @@
+.reel {
+    width: 350px;
+    height: -webkit-fill-available;
+    height: -moz-available;
+    position: relative;
+    display: flex;
+    background-color: black;
+    border-radius: 10px;
+    transition: var(--transition-sec);
+}
+
+.reel video {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    border-radius: 10px;
+}
+
+.reel-options {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 10px;
+}
+
+.reel-options-dropdown {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: var(--color-bg);
+    border: var(--border);
+    padding: 5px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1;
+    animation: fade-in linear 0.2s;
+}
+
+.reel-options:hover .reel-options-dropdown {
+    display: flex;
+}
+
+.reel-user {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    position: absolute;
+    bottom: 0px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.reel-user img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.reel-user-names {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.reel-user-names span:first-child {
+    font-weight: bold;
+}
+
+.reel-buttons {
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.reel-buttons span {
+    color: white;
+}
+
+/* .reel-lcsv-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.reel-lcsv-btn:hover {
+    background-color: transparent;
+    box-shadow: var(--box-shadow);
+}
+
+.reel-lcsv-btn img {
+    filter: invert(100%);
+} */
+
+.reel-like-emoji-holder {
+    position: relative;
+}
+
+.reel-like-emoji {
+    display: none;
+    flex-direction: row-reverse;
+    gap: 5px;
+    position: absolute;
+    top: -7px;
+    right: -5px;
+    background-color: var(--color-bg);
+    padding: 5px;
+    border-radius: 10px;
+    border: var(--border);
+    z-index: 1;
+    animation: fade-in linear 0.2s;
+}
+
+.reel-like-emoji-holder:hover .reel-like-emoji {
+    display: flex;
+}
+
+/* Reel Comment */
+.reel-comment-list {
+    height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: auto;
+}
+
+.reel-comment-input {
+    display: flex;
+    padding-top: 10px;
+    gap: 15px;
+}
+
+.reel-comment-input-pic {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.reel-comment-input input {
+    flex-grow: 1;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 400px) {
+    .reel {
+        width: 280px;
+    }
+}

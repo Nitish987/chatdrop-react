@@ -1,0 +1,39 @@
+.friend-request-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    gap: 5px;
+}
+/* ------------------------------------------ */
+.friend-request-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.friend-request-name{
+    font-weight: bold;
+}
+.friend-request-message{
+    font-size: 12px;
+}
+.friend-request-header-middle{
+    display: flex;
+    flex-direction: column;
+}
+.friend-request-pic{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+/* ------------------------------------------ */
+.friend-request-footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+    margin-top: 10px;
+}
