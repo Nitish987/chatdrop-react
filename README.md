@@ -54,3 +54,9 @@ REACT_APP_FIREBASE_VAPID_KEY="REACT_APP_FIREBASE_VAPID_KEY"
 - Also this project has a proxy in package.json at http://127.0.0.1:8000 on which [chatdrop server](https://github.com/Nitish987/chatdrop-django) is running. Visit [chatdrop server](https://github.com/Nitish987/chatdrop-django) repository to setup server.
 
 - Some features of this project are not fully completed yet.
+
+### Related Repositories
+
+- [Chatdrop Mobile App](https://github.com/Nitish987/chatdrop-flutter)
+
+- [Chatdrop Server](https://github.com/Nitish987/chatdrop-django)
