@@ -48,3 +48,9 @@ REACT_APP_FIREBASE_APP_ID="REACT_APP_FIREBASE_APP_ID"
 REACT_APP_FIREBASE_MEASUREMENT_ID="REACT_APP_FIREBASE_MEASUREMENT_ID"
 REACT_APP_FIREBASE_VAPID_KEY="REACT_APP_FIREBASE_VAPID_KEY"
 ```
+
+- This web app requires firebase connectivity.
+
+- Also this project has a proxy in package.json at http://127.0.0.1:8000 on which [chatdrop server](https://github.com/Nitish987/chatdrop-django) is running. Visit [chatdrop server](https://github.com/Nitish987/chatdrop-django) repository to setup server.
+
+- Some features of this project are not fully completed yet.
